@@ -9,6 +9,8 @@ with open('integers.txt', 'r') as main_file, open('double.txt', 'w') as squared_
             square = even_nmbrs ** 2
             # create separate text file for squared integers
             squared_file.write(square + '\n')
-            # check for odd integers
+        # check for odd integers
+        else:
+            odd_nmbrs = str(integers)
             # cube the odd integers
             # create separate text file for cubic integers
