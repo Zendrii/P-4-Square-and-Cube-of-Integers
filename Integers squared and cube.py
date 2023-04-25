@@ -4,15 +4,15 @@ with open('integers.txt', 'r') as main_file, open('double.txt', 'w') as squared_
         integers = int(line)
         # check for even integers
         if integers % 2 == 0:
-            even_nmbrs = str(integers)
             # square the even integers
-            square = even_nmbrs ** 2
+            square = pow(integers, 2)
+            even_nmbrs = str(square)
             # create separate text file for squared integers
-            squared_file.write(square + '\n')
+            squared_file.write(even_nmbrs + '\n')
         # check for odd integers
         else:
-            odd_nmbrs = str(integers)
             # cube the odd integers
-            cube = odd_nmbrs ** 3
+            cube = pow(integers, 3)
+            odd_nmbrs = str(cube)
             # create separate text file for cubic integers
-            cubic_file.write(cube + '\n')
+            cubic_file.write(odd_nmbrs + '\n')
