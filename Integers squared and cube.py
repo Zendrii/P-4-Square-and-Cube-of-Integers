@@ -6,7 +6,7 @@ with open('integers.txt', 'r') as main_file, open('double.txt', 'w') as squared_
         if integers % 2 == 0:
             even_nmbrs = str(integers)
             # square the even integers
-            
+            square = even_nmbrs ** 2
             # create separate text file for squared integers
             # check for odd integers
             # cube the odd integers
