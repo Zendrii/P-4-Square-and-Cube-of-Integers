@@ -13,4 +13,6 @@ with open('integers.txt', 'r') as main_file, open('double.txt', 'w') as squared_
         else:
             odd_nmbrs = str(integers)
             # cube the odd integers
+            cube = odd_nmbrs ** 3
             # create separate text file for cubic integers
+            cubic_file.write(cube + '\n')
